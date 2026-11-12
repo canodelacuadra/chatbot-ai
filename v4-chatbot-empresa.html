@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot v4 - Especializado en una empresa</title>
+
+  <link rel="stylesheet" href="css/v4-chatbot-empresa.css">
+</head>
+
+<body>
+  <div class="chat">
+    <header class="cabecera">
+      <div class="marca">
+        <div id="avatar" class="avatar" aria-hidden="true">🎓</div>
+        <div class="datos-marca">
+          <h1 id="nombre">Aula Nova</h1>
+          <p id="lema">Formación online por suscripción</p>
+        </div>
+        <span id="modo" class="modo">Modo local</span>
+      </div>
+
+      <!--
+        ⚠️ EN PRODUCCIÓN: este campo no existiría.
+        La API key debe vivir en una variable de entorno del servidor.
+      -->
+      <details class="config">
+        <summary>⚙️ Conectar IA (opcional)</summary>
+        <label for="api-key">API key de OpenRouter</label>
+        <input id="api-key" type="password" placeholder="Pega aquí tu clave (sk-or-v1-...)" autocomplete="off">
+        <small>
+          Sin clave, Nova responde solo con las FAQ de la empresa (modo local).
+          La clave se usa únicamente en tu navegador. En una empresa real iría en el servidor.
+        </small>
+      </details>
+    </header>
+
+    <main id="mensajes" class="mensajes" aria-live="polite"></main>
+
+    <div id="sugerencias" class="sugerencias" aria-label="Preguntas sugeridas"></div>
+
+    <div class="zona-entrada">
+      <input id="entrada" type="text" placeholder="Escribe tu pregunta..." autocomplete="off">
+      <button id="enviar" type="button">Enviar</button>
+    </div>
+
+    <div class="pie">
+      <button id="derivar" type="button">👤 Hablar con una persona</button>
+    </div>
+  </div>
+
+  <script src="js/v4-chatbot-empresa.js"></script>
+</body>
+
+</html>

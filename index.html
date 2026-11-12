@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cuatro versiones progresivas de un chatbot web: reglas, interfaz, LLM y especialización para una empresa.">
+  <title>Chatbots web · 4 versiones</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div class="envoltorio">
+    <header class="portada">
+      <p class="etiqueta">Proyecto de desarrollo web</p>
+      <h1>Chatbots web en 4 versiones</h1>
+      <p class="intro">
+        Una progresión para entender cómo se construye un asistente conversacional:
+        desde unas pocas reglas hasta un chatbot especializado en una empresa y conectado a un modelo de lenguaje.
+      </p>
+    </header>
+
+    <main class="rejilla">
+      <article class="tarjeta v1">
+        <span class="numero">Versión 01</span>
+        <h2>El mínimo</h2>
+        <p class="descripcion">
+          Un chatbot con reglas <code>if</code> y un cuadro de texto. El punto de partida para entender
+          el ciclo entrada → respuesta.
+        </p>
+        <ul class="etiquetas">
+          <li>Reglas</li>
+          <li>DOM</li>
+          <li>Sin dependencias</li>
+        </ul>
+        <a class="boton" href="v1-chatbot-minimo.html">Abrir chatbot →</a>
+      </article>
+
+      <article class="tarjeta v2">
+        <span class="numero">Versión 02</span>
+        <h2>La interfaz</h2>
+        <p class="descripcion">
+          La misma lógica por reglas, ahora con burbujas, estilos y una experiencia de chat
+          cómoda y reconocible.
+        </p>
+        <ul class="etiquetas">
+          <li>Interfaz</li>
+          <li>Eventos</li>
+          <li>Reglas</li>
+        </ul>
+        <a class="boton" href="v2-chatbot-interfaz.html">Abrir chatbot →</a>
+      </article>
+
+      <article class="tarjeta v3">
+        <span class="numero">Versión 03</span>
+        <h2>El cerebro IA</h2>
+        <p class="descripcion">
+          El bot se conecta a un LLM mediante OpenRouter. Gana contexto y personalidad,
+          pero necesita una API key para responder.
+        </p>
+        <ul class="etiquetas">
+          <li>LLM</li>
+          <li>OpenRouter</li>
+          <li>API key</li>
+        </ul>
+        <a class="boton" href="v3-chatbot-ia.html">Abrir chatbot →</a>
+      </article>
+
+      <article class="tarjeta v4">
+        <span class="numero">Versión 04</span>
+        <h2>La empresa</h2>
+        <p class="descripcion">
+          Especializado en Aula Nova: identidad de marca, base de conocimiento, límites y
+          derivación a una persona. Funciona sin API key en modo local.
+        </p>
+        <ul class="etiquetas">
+          <li>Empresa</li>
+          <li>FAQ</li>
+          <li>Modo local</li>
+        </ul>
+        <a class="boton" href="v4-chatbot-empresa.html">Abrir chatbot →</a>
+      </article>
+    </main>
+
+    <footer>
+      <p>Proyecto académico de desarrollo web · HTML, CSS y JavaScript, sin frameworks.</p>
+      <p class="notas">
+        Las versiones 3 y 4 pueden conectarse a OpenRouter; la API key se introduce en el navegador
+        solo para la demostración. El código y la documentación están en
+        <a href="https://github.com/canodelacuadra/chatbot-ai" target="_blank" rel="noopener noreferrer">GitHub</a>.
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

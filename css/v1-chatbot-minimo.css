@@ -1,0 +1,15 @@
+/* v1: los estilos mínimos imprescindibles.
+   La idea de esta versión es que el HTML y el JS sean lo más simple posible. */
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+#chat {
+  border: 1px solid gray;
+  padding: 10px;
+  height: 200px;
+  overflow-y: scroll;
+}
